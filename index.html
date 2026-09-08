@@ -7,137 +7,117 @@
     <link rel="stylesheet" href="style.css">
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Navigation Header -->
+    <!-- Top Navigation Bar -->
     <header class="navbar">
         <div class="nav-container">
             <a href="#" class="brand-logo">
                 <img src="Logo-removebg-preview.png" alt="Havoc City Logo" class="logo-img">
-                <span class="brand-text">HAVOC <span>CITY</span></span>
+                <div class="brand-text">
+                    <span class="brand-title">HAVOCCITY<span>RP</span></span>
+                    <span class="brand-sub">PREMIER ROLEPLAY COMMUNITY</span>
+                </div>
+                <span class="badge-season">SEASON 1</span>
             </a>
+            
             <nav class="nav-links">
-                <a href="#about">About</a>
-                <a href="#features">Features</a>
-                <a href="#rules">Rules</a>
-                <a href="#faq">FAQ</a>
+                <a href="#" class="active">HOME</a>
+                <a href="#apply">APPLY FOR QUIZ</a>
+                <a href="#rules">RULES</a>
+                <a href="#staff">STAFF TEAM</a>
             </nav>
-            <a href="https://discord.gg/" target="_blank" class="btn btn-discord">
-                <i class="fa-brands fa-discord"></i> Join Discord
-            </a>
+
+            <div class="user-profile">
+                <img src="Logo-removebg-preview.png" alt="User Avatar" class="avatar">
+                <div class="user-info">
+                    <span class="username">HAVOC PLAYER</span>
+                    <span class="status"><i class="fa-brands fa-discord"></i> DISCORD VERIFIED</span>
+                </div>
+                <i class="fa-solid fa-right-from-bracket logout-icon"></i>
+            </div>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <img src="Logo-removebg-preview.png" alt="Havoc City Logo" class="hero-logo">
-            <h1 class="hero-title">HAVOC <span>CITY</span></h1>
-            <p class="tagline">BUILT IN CHAOS. UNITED IN HAVOC.</p>
-            <div class="hero-buttons">
-                <a href="fivem://connect/your-server-ip" class="btn btn-primary">
-                    <i class="fa-solid fa-play"></i> Play Now
-                </a>
-                <a href="https://discord.gg/" target="_blank" class="btn btn-secondary">
-                    <i class="fa-brands fa-discord"></i> Community Discord
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Stats Banner -->
-    <section class="stats-bar">
-        <div class="stat-card">
-            <h3>100+</h3>
-            <p>Custom Vehicles</p>
-        </div>
-        <div class="stat-card">
-            <h3>24/7</h3>
-            <p>Active Staff Support</p>
-        </div>
-        <div class="stat-card">
-            <h3>Custom</h3>
-            <p>Heists & Businesses</p>
-        </div>
-        <div class="stat-card">
-            <h3>Optimized</h3>
-            <p>High FPS Gameplay</p>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title">WELCOME TO <span>HAVOC CITY</span></h2>
-            <p class="section-desc">
-                Step into an immersive, next-level GTA V Roleplay experience. Whether you choose to uphold the law, dominate the criminal underground, or build an enterprise from the ground up—Havoc City offers unlimited freedom and balanced RP mechanics.
-            </p>
-        </div>
-    </section>
-
-    <!-- Server Features -->
-    <section id="features" class="section bg-alt">
-        <div class="container">
-            <h2 class="section-title">SERVER <span>FEATURES</span></h2>
-            <div class="grid grid-3">
-                <div class="card">
-                    <i class="fa-solid fa-gun card-icon"></i>
-                    <h3>Criminal Empire</h3>
-                    <p>Organized crime, custom heist mechanics, illegal drug craftings, and territory wars.</p>
+    <section class="hero-section">
+        <div class="hero-container">
+            
+            <!-- Left Column: Content & Buttons -->
+            <div class="hero-left">
+                <div class="hero-tags">
+                    <span class="tag-badge"><img src="Logo-removebg-preview.png" class="mini-logo"> HAVOC ROLEPLAY — SEASON 1</span>
+                    <span class="tag-pill">#unitedinhavoc</span>
                 </div>
-                <div class="card">
-                    <i class="fa-solid fa-shield-halved card-icon"></i>
-                    <h3>Law & Order</h3>
-                    <p>Fully equipped LSPD, Department of Justice, and emergency services with realistic SOPs.</p>
+
+                <h1 class="hero-heading">
+                    UNLEASH YOUR<br>
+                    <span>STORY IN LOS SANTOS</span>
+                </h1>
+
+                <p class="hero-description">
+                    Step into an ultra-high performance GTA V roleplay ecosystem. Custom import physics, reactive player economy, tactical law enforcement & immersive storylines built for serious roleplayers.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="fivem://connect/your-server-ip" class="btn btn-connect">
+                        <i class="fa-solid fa-bolt"></i> CONNECT <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="#apply" class="btn btn-quiz">
+                        <i class="fa-solid fa-file-signature"></i> APPLY FOR QUIZ <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                    <a href="#trailer" class="btn btn-trailer">
+                        <i class="fa-solid fa-play"></i> TRAILER
+                    </a>
                 </div>
-                <div class="card">
-                    <i class="fa-solid fa-car card-icon"></i>
-                    <h3>Custom Imports</h3>
-                    <p>Huge selection of custom realistic vehicles with custom sound sets and tuning options.</p>
+
+                <!-- Stats Bar -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-label">SCRIPT TICK</span>
+                        <span class="stat-value">0.2ms Ultra FPS</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-label">CUSTOM IMPORTS</span>
+                        <span class="stat-value">300+ Vehicles</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-label">ECONOMY</span>
+                        <span class="stat-value">100% Player-Run</span>
+                    </div>
                 </div>
             </div>
+
+            <!-- Right Column: Trailer Card -->
+            <div class="hero-right" id="trailer">
+                <div class="trailer-card">
+                    <div class="trailer-header">
+                        <span>HAVOC CITY OFFICIAL TRAILER</span>
+                        <span class="badge-mini">SEASON 1 CINEMATIC</span>
+                    </div>
+                    
+                    <div class="video-container">
+                        <!-- Replace YOUR_YOUTUBE_VIDEO_ID with your actual YouTube video ID -->
+                        <iframe 
+                            src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                            title="Havoc City Official Trailer" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+
+                    <div class="trailer-footer">
+                        <span><i class="fa-solid fa-film"></i> 4K 60FPS CINEMATIC</span>
+                        <a href="#" class="expand-btn">EXPAND <i class="fa-solid fa-expand"></i></a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
-
-    <!-- Core Rules Quick-View -->
-    <section id="rules" class="section">
-        <div class="container">
-            <h2 class="section-title">COMMUNITY <span>RULES</span></h2>
-            <div class="rules-box">
-                <ul>
-                    <li><i class="fa-solid fa-triangle-exclamation"></i> <strong>Value Your Life (NVL):</strong> Always prioritize your character's life in life-threatening situations.</li>
-                    <li><i class="fa-solid fa-triangle-exclamation"></i> <strong>No RDM / VDM:</strong> Random / Vehicle Deathmatch is strictly prohibited without valid RP reason.</li>
-                    <li><i class="fa-solid fa-triangle-exclamation"></i> <strong>No Meta / Powergaming:</strong> Do not use external information or force unbeatable RP scenarios on others.</li>
-                    <li><li style="list-style: none;"><a href="https://discord.gg/" class="link-red">Read complete rules guidelines on our Discord →</a></li></li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section id="faq" class="section bg-alt">
-        <div class="container">
-            <h2 class="section-title">FREQUENTLY ASKED <span>QUESTIONS</span></h2>
-            <div class="faq-item">
-                <h4>How do I join the server?</h4>
-                <p>Join our Discord server, complete the whitelist application (if applicable), and connect using our direct FiveM IP link.</p>
-            </div>
-            <div class="faq-item">
-                <h4>Is Havoc City Whitelisted?</h4>
-                <p>Check our Discord announcement channel for current server access status and application forms.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container footer-content">
-            <p>&copy; 2026 HAVOC CITY. All rights reserved. Not affiliated with Rockstar Games or Take-Two Interactive.</p>
-        </div>
-    </footer>
 
 </body>
 </html>
